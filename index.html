@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Online Calculator App</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="../stylesheets/style.css" />
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="calculator-heading-div">
+                <h1 id="calculator-heading">Simple Calculator - 21142</h1>
+            </div>
+            <div class="calculator-screen">
+                <div class="screen-div">
+                    <input type="text" id="input-screen" disabled />
+                </div>
+                <div class="screen-div">
+                    <input type="text" id="result-screen" disabled />
+                </div>
+            </div>
+            <div class="calculator-body">
+                <div class="row">
+                    <input class="button" type="button" value="7" onClick="showNum('7')" />
+                    <input class="button" type="button" value="8" onClick="showNum('8')" />
+                    <input class="button" type="button" value="9" onClick="showNum('9')" />
+                    <input class="button" type="button" value="/" onClick="chooseOperator(value)" />
+                    <input class="button" type="button" value="=" onClick="calculate()" />
+                </div>
+                <div class="row">
+                    <input class="button" type="button" value="4" onClick="showNum('4')" />
+                    <input class="button" type="button" value="5" onClick="showNum('5')" />
+                    <input class="button" type="button" value="6" onClick="showNum('6')" />
+                    <input class="button" type="button" value="*" onClick="chooseOperator(value)" />
+                    <input class="button" type="button" value="%" onClick="chooseOperator(value)" />
+                </div>
+                <div class="row">
+                    <input class="button" type="button" value="1" onClick="showNum('1')" />
+                    <input class="button" type="button" value="2" onClick="showNum('2')" />
+                    <input class="button" type="button" value="3" onClick="showNum('3')" />
+                    <input class="button" type="button" value="+" onClick="chooseOperator(value)" />
+                    <input class="button" id="disabled" type="button" value="√" onClick="chooseOperator(value)" />
+                </div>
+                <div class="row">
+                    <input class="button" type="button" value="0" onClick="showNum('0')" />
+                    <input class="button" type="button" value="." onClick="showNum('.')" />
+                    <input class="button" type="button" value="C" onClick="clearScreen()" />
+                    <input class="button" type="button" value="-" onClick="chooseOperator(value)" />
+                    <input class="button" type="button" value="^" onClick="chooseOperator(value)" />
+                </div>
+            </div>
+        </div>
+
+        <script src="../scripts/app.js"></script>
+    </body>
+</html>
