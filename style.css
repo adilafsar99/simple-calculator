@@ -84,6 +84,12 @@
 
 @media (max-width: 760px) {
     .calculator {
+        width: 70%;
+    }
+}
+
+@media (max-width: 550px) {
+    .calculator {
         width: 90%;
     }
 }
